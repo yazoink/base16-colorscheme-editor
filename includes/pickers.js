@@ -47,6 +47,7 @@ fetch('../static/json/schemes.json')
         case 'base2':
           picker.addEventListener('input', function(event) {
             borderColor = event.target.value;
+            recolorBorders(borders, borderColor);
           });
         case 'base5':
           picker.addEventListener('input', function(event) {
