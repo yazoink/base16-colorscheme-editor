@@ -40,7 +40,7 @@ body {
   margin-right: auto;
   display: grid;
   grid-template-columns: 450px 700px;
-  grid-template-rows: 75px 500px 50px;
+  grid-template-rows: 75px 515px 50px;
   justify-content: center;
   height: 100%;
   width: 100%;

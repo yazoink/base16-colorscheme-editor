@@ -12,8 +12,8 @@
       <h1 class='base13'>Base16 Colorscheme Editor</h1>
     </header>
     <div class='left border'>
-      <div class='center'><?php print_color_row(2, 8); ?></div>
       <p class='base3 center'><i>(Click on the colors to change them)</i></p>
+      <div class='center'><?php print_color_row(2, 8); ?></div>
       <p>This website is a simple <a href='https://github.com/chriskempson/base16' target='_blank' class='base13'>Base16 colorscheme</a> editor inspired by <a href='https://terminal.sexy' target='_blank' class='base13'>terminal.sexy</a> and created by <a href='https://yazo.ink' target='_blank' class='base13'>yazoink</a>.</p>
       <textarea id='output' class='output' name='output' readonly></textarea>
       <div class='center'><button class='button' onclick='copyText()'>Copy</button></div>
