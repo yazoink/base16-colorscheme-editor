@@ -4,12 +4,12 @@
   <head>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name='author' content='yazoink'>
-    <title>Base16 Colorscheme Maker</title>
+    <title>Base16 Colorscheme Editor</title>
     <link rel='stylesheet' href='static/css/style.css'>
   </head>
   <body>
     <header class='title'>
-      <h1 class='base13'>Base16 Colorscheme Maker</h1>
+      <h1 class='base13'>Base16 Colorscheme Editor</h1>
     </header>
     <div class='left border'>
       <?php print_color_row(2, 8); ?>
