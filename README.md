@@ -1,5 +1,5 @@
 # base16-colorscheme-editor
-![20250119_20:06:44_screenshot](https://github.com/user-attachments/assets/f246fab8-83c8-4835-8982-7545a9aa7a89)
+![20250120_00:21:19_screenshot-cropped](https://github.com/user-attachments/assets/d8b62e9d-16c3-4892-a689-81e76e72ce61)
 
 ## Features
 - Instant color reloading/preview
