@@ -38,23 +38,21 @@ fetch('../static/json/schemes.json')
       let highlights = document.querySelectorAll('.' + picker.id);
       recolorAll(highlights, picker.value);
 
-      if (picker.id == 'base0') {
-        picker.addEventListener('input', function(event) {
-          document.body.style.backgroundColor = event.target.value;
-        });
-      } else if (picker.id == 'base5') {
-        picker.addEventListener('input', function(event) {
-          document.body.style.color = event.target.value;
-        });
-      } else if (picker.id == 'base13') {
-        picker.addEventListener('input', function(event) {
-          borderHoverColor = event.target.value;
-          recolorAll(highlights, event.target.value);
-        });
-      } else {
-        picker.addEventListener('input', function(event) {
-          recolorAll(highlights, event.target.value);
-        });
+      switch (picker.id) {
+        case 'base0':
+          picker.addEventListener('input', function(event) {
+            document.body.style.backgroundColor = event.target.value;
+          });
+          break;
+        case 'base5':
+          picker.addEventListener('input', function(event) {
+            document.body.style.color = event.target.value;
+          });
+          break;
+        default:
+          picker.addEventListener('input', function(event) {
+            recolorAll(highlights, event.target.value);
+          });
       }
     });
   })
