@@ -46,11 +46,6 @@ fetch('../static/json/schemes.json')
         picker.addEventListener('input', function(event) {
           document.body.style.color = event.target.value;
         });
-      } else if (picker.id == 'base2') {
-        picker.addEventListener('input', function(event) {
-          borderColor = event.target.value;
-          recolorBorders(borders, borderColor);
-        });
       } else if (picker.id == 'base13') {
         picker.addEventListener('input', function(event) {
           borderHoverColor = event.target.value;
