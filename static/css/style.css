@@ -1,14 +1,52 @@
+@font-face {
+  font-family: 'rubik';
+  src: url('../fonts/rubik/Rubik-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rubik';
+  src: url('../fonts/rubik/Rubik-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rubik';
+  src: url('../fonts/rubik/Rubik-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'rubik';
+  src: url('../fonts/rubik/Rubik-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'compis';
+  src: url('../fonts/compis/Compis.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: rubik;
   word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 450px 650px;
-  grid-template-rows: 75px 400px 50px;
+  grid-template-columns: 450px 700px;
+  grid-template-rows: 75px 450px 50px;
   justify-content: center;
   height: 100%;
   width: 100%;
+  font-size: 16px;
   column-gap: 15px;
+  transform: scale(1, 1);
 }
 
 .title {
@@ -20,9 +58,10 @@ body {
 
 .left, .right {
   padding: 15px;
-  border: 2px solid white;
+  border: 2px solid #000000;
   border-radius: 15px;
   overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
 .left {
@@ -73,4 +112,20 @@ input[type="color"]:focus {
 
 input[type="color"]:hover {
   transform: scale(1.035);
+}
+
+pre, code {
+  font-family: compis;
+  font-size: 12pt;
+  line-height: 12pt;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-smooth: never;
+  text-rendering: optimizeSpeed;
+  -webkit-text-stroke: 0;
+  font-feature-settings: "kern" 0;
+  font-kerning: none;
+  transform: scale(1, 1);
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }

@@ -21,7 +21,7 @@
         <pre><code>
   <span class='base13'>#include</span> <span class='base11'>&lt;stdio.h&gt;</span>
   <span class='base13'>#include</span> <span class='base11'>&lt;stdlib.h&gt;</span>
-  <span class='base13'>#include</span> <span class='base11'>&gt;string.h&gt;</span>
+  <span class='base13'>#include</span> <span class='base11'>&lt;string.h&gt;</span>
 
   <span class='base14'>typedef struct</span> {
     <span class='base10'>int</span> some_integer<span class='base15'>;</span>
