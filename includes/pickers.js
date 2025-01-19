@@ -12,10 +12,17 @@ function recolorBorders(borders, color) {
   });
 }
 
+function recolorButtons(buttons, bg, fg) {
+  buttons.forEach(button => {
+    button.style.backgroundColor = bg;
+    button.style.color = fg;
+  });
+}
+
 function writeBase16Yaml(template, colorscheme) {
   yaml = template;
   for (let key in colorscheme) {
-    yaml = yaml.replace(key.toUpperCase(), colorscheme[key]);
+    yaml = yaml.replace(key.toUpperCase(), colorscheme[key].replace('#', ''));
   }
   return yaml;
 }
@@ -46,9 +53,11 @@ base0F: "BASE15"`;
     document.body.style.backgroundColor = colorscheme['base0'];
     document.body.style.color = colorscheme['base5'];
     let borders = document.querySelectorAll('.border');
+    let buttons = document.querySelectorAll('.button');
     document.getElementById('output').style.backgroundColor = colorscheme['base1'];
     document.getElementById('output').style.color = colorscheme['base5'];
     recolorBorders(borders, colorscheme['base2']);
+    recolorButtons(buttons, colorscheme['base1'], colorscheme['base5'])
 
     borders.forEach(border => {
       border.addEventListener('mouseover', () => {
@@ -57,6 +66,16 @@ base0F: "BASE15"`;
 
       border.addEventListener('mouseout', () => {
         border.style.border = '2px solid ' + colorscheme['base2'];
+      });
+    });
+
+    buttons.forEach(button => {
+      button.addEventListener('mouseover', () => {
+        button.style.backgroundColor = colorscheme['base2'];
+      });
+
+      button.addEventListener('mouseout', () => {
+        button.style.backgroundColor = colorscheme['base1'];
       });
     });
 
@@ -82,6 +101,7 @@ base0F: "BASE15"`;
           picker.addEventListener('input', function(event) {
             document.getElementById('output').style.backgroundColor = event.target.value;
             colorscheme[picker.id] = event.target.value;
+            recolorButtons(buttons, event.target.value, colorscheme['base5'])
             recolorAll(highlights, event.target.value);
             document.getElementById('output').value = writeBase16Yaml(base16Template, colorscheme);
           });
@@ -100,6 +120,7 @@ base0F: "BASE15"`;
             document.getElementById('output').style.color = event.target.value;
             colorscheme[picker.id] = event.target.value;
             recolorAll(highlights, event.target.value);
+            recolorButtons(buttons, colorscheme['base1'], event.target.value)
             document.getElementById('output').value = writeBase16Yaml(base16Template, colorscheme);
           });
           break;

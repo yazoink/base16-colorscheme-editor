@@ -16,6 +16,7 @@
       <p class='base3 center'><i>(Click on the colors to change them)</i></p>
       <p>This website is a simple <a href='https://github.com/chriskempson/base16' target='_blank' class='base13'>Base16 colorscheme</a> editor inspired by <a href='https://terminal.sexy' target='_blank' class='base13'>terminal.sexy</a> and created by <a href='https://yazo.ink' target='_blank' class='base13'>yazoink</a>.</p>
       <textarea id='output' class='output' name='output' readonly></textarea>
+      <div class='center'><button class='button' onclick='copyText()'>Copy</button></div>
     </div>
     <div class='right border'>
       <div class='example-code'>
@@ -60,5 +61,6 @@
       <p>Created by <a class='base13' href='https://yazo.ink' target='_blank'>yazoink</a>.</p>
     </footer>
     <script src='includes/pickers.js'></script>
+    <script src='includes/copytext.js'></script>
   </body>
 </html>
