@@ -87,6 +87,7 @@ body {
 }
 
 input[type="color"] {
+  outline: none;
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -99,11 +100,13 @@ input[type="color"] {
 
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
+  outline: none;
   border: none;
 }
 
 input[type="color"]::-webkit-color-swatch {
   border: none;
+  outline: none;
 }
 
 input[type="color"]:focus {
@@ -114,7 +117,7 @@ input[type="color"]:hover {
   transform: scale(1.035);
 }
 
-pre, code {
+pre, code, textarea {
   font-family: compis;
   font-size: 12pt;
   line-height: 12pt;
@@ -128,4 +131,17 @@ pre, code {
   transform: scale(1, 1);
   image-rendering: crisp-edges;
   image-rendering: pixelated;
+}
+
+textarea, textarea:focus {
+  padding: 15px;
+  outline: none;
+  border: transparent;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.output {
+  width: 92.5%;
+  height: 175px;
 }

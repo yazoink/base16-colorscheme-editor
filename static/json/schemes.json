@@ -1,20 +1,20 @@
 {
-  "everblush": [
-    "#141B1E",
-    "#1C2326",
-    "#232A2D",
-    "#353C3F",
-    "#B3B9B8",
-    "#DADADA",
-    "#DADADA",
-    "#DDDDDD",
-    "#E57474",
-    "#E59E70",
-    "#E5C76B",
-    "#8CCF7E",
-    "#6CBFBF",
-    "#67B0E8",
-    "#C47FD5",
-    "#CD6B6C"
-  ]
+  "everblush": {
+    "base0": "#141B1E",
+    "base1": "#1C2326",
+    "base2": "#232A2D",
+    "base3": "#353C3F",
+    "base4": "#B3B9B8",
+    "base5": "#DADADA",
+    "base6": "#DADADA",
+    "base7": "#DDDDDD",
+    "base8": "#E57474",
+    "base9": "#E59E70",
+    "base10": "#E5C76B",
+    "base11": "#8CCF7E",
+    "base12": "#6CBFBF",
+    "base13": "#67B0E8",
+    "base14": "#C47FD5",
+    "base15": "#CD6B6C"
+  }
 }
