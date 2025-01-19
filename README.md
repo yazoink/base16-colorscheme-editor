@@ -9,4 +9,6 @@
 ## To-do
 - Add switchable default/base themes
 - Add downloadable base16 YAML + some configs probably
+- Switchable fonts
+- More code snippets for the preview
 - Host demo
