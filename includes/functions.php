@@ -9,9 +9,4 @@ function print_color_row($rows, $cols) {
     echo "<br>";
   }
 }
-
-function json_file_to_array($path) {
-  $json_string = file_get_contents($path);
-  return json_decode($json_string, true);
-}
 ?>

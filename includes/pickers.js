@@ -44,11 +44,19 @@ fetch('../static/json/schemes.json')
             document.body.style.backgroundColor = event.target.value;
           });
           break;
+        case 'base2':
+          picker.addEventListener('input', function(event) {
+            borderColor = event.target.value;
+          });
         case 'base5':
           picker.addEventListener('input', function(event) {
             document.body.style.color = event.target.value;
           });
           break;
+        case 'base13':
+          picker.addEventListener('input', function(event) {
+            borderHoverColor = event.target.value;
+          });
         default:
           picker.addEventListener('input', function(event) {
             recolorAll(highlights, event.target.value);
