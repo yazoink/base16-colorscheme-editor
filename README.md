@@ -1,4 +1,6 @@
 # base16-colorscheme-editor
+A simple Base16 colorscheme editor. Try it [here](https://base16.yazo.ink)!    
+
 ![20250120_00:21:19_screenshot-cropped](https://github.com/user-attachments/assets/d8b62e9d-16c3-4892-a689-81e76e72ce61)
 
 ## Features
@@ -11,4 +13,3 @@
 - Add downloadable base16 YAML + some configs probably
 - Switchable fonts
 - More code snippets for the preview
-- Host demo
